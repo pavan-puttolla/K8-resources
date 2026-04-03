@@ -1,3 +1,5 @@
+# This file is used to create a namespace in Kubernetes for the Roboshop project.
+
 apiversion: v1
 Kind: Namespace
 metadata:
