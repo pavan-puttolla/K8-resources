@@ -1,10 +1,10 @@
 # This file is used to create a namespace in Kubernetes for the Roboshop project.
 
-apiversion: V1
+apiVersion: v1
 kind: Namespace
 metadata:
   name: roboshop
-  labels:
+  Labels:
   project: roboshop
   environment: dev
   purpose: poc
