@@ -2,7 +2,7 @@ apiversion: v1
 Kind: Namespace
 metadata:
   name: roboshop
-Labels:
+  Labels:
   project: roboshop
   environment: dev
   purpose: poc
