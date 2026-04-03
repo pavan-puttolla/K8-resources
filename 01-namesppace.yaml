@@ -1,9 +1,8 @@
 apiversion:v1
-Kind: NAmespace
+Kind: namespace
 metadata:
   name: roboshop
 Labels:
   project: roboshop
   environment: dev
   purpose: poc
-  
