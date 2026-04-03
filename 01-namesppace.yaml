@@ -1,5 +1,5 @@
-apiversion:v1
-Kind: namespace
+apiversion: v1
+Kind: Namespace
 metadata:
   name: roboshop
 Labels:
