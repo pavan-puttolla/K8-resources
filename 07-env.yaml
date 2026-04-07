@@ -3,12 +3,11 @@ kind: Pod
 metadata:
  name: env-demo
 spec:
-containers:
-- name: nginx
-  image: nginx
-  env:
-  - name: project
-    value: roboshop
-    name: course
-    value: kubernetes
-    
+ containers:
+ - name: nginx
+   image: nginx
+   env:
+   - name: project
+     value: roboshop
+   - name: course
+     value: kubernetes
