@@ -1,9 +1,9 @@
-apiVersion: v1
+apiVersion: V1
 kind: Pod
 metadata:
   name: labels
   namespace: roboshop
-  Labels:
+  labels:
     project: roboshop
     componennt: frontend
     environment: dev
