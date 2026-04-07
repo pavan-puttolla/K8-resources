@@ -8,11 +8,11 @@ spec:
     image: nginx
     resources:
     #soft limit
-    rquests:
+     rquests:
       memory: "64Mi"
       cpu: "100m"
     #hard limit
-    limits:                 
+     limits:                 
         memory: "128Mi"
         cpu: "150m"
                  
