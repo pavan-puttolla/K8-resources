@@ -6,13 +6,13 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    resources:
+  resources:
     #soft limit
-     rquests:
+     requests:
       memory: "64Mi"
       cpu: "100m"
     #hard limit
      limits:                 
-        memory: "128Mi"
-        cpu: "150m"
+       memory: "128Mi"
+       cpu: "150m"
                  
