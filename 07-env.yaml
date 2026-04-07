@@ -11,9 +11,4 @@ containers:
     value: roboshop
     name: course
     value: kubernetes
-
-
-
-
-
-  
+    
