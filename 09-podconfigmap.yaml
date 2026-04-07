@@ -9,4 +9,3 @@ metadata:
     envFrom:
     - configMapRef:
         name: nginix-config
-        
