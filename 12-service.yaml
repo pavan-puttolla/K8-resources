@@ -12,3 +12,4 @@ spec:
    - protocol: TCP
      port: 80 #port on which the service is exposed
      targetPort: 80 
+     nodeport: 31221 #he service is exposed on the node, only for NodePort type
