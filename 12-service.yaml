@@ -11,4 +11,4 @@ spec:
   ports:
    - protocol: TCP
      port: 80 #port on which the service is exposed
-     targetPort: 8080
+     targetPort: 80
