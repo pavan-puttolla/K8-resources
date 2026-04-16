@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: nginx
 #this labels are using for replica set labels
-labels:
+  labels:
     project:  roboshop
     purpose:  rs-demo
     component: frontend
