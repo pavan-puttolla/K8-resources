@@ -19,9 +19,9 @@ spec:
       environment: dev
       tier: frontend
   # using the template to create the pod(or)this is a pod defination,pod subset of replicaset
-template:
-  metadata:
-    labels:
+  template:
+    metadata:
+     labels:
       project:  roboshop
       purpose: rs-demo
       component: frontend
