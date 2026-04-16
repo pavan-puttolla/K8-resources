@@ -7,7 +7,7 @@ metadata:
     project:  roboshop
     purpose:  rs-demo
     component: frontend
-    enironment: dev
+    environment: dev
     tier: frontend
 spec:
   replicas: 3
@@ -16,18 +16,18 @@ spec:
       project:  roboshop
       purpose: rs-demo
       component: frontend
-      enironment: dev
+      environment: dev
       tier: frontend
   # using the template to create the pod(or)this is a pod defination,pod subset of replicaset
 template:
-   metadata:
-     labels:
-       project:  roboshop
-       purpose: rs-demo
-       component: frontend
-       enironment: dev
-       tier: frontend
-   spec:
+  metadata:
+    labels:
+      project:  roboshop
+      purpose: rs-demo
+      component: frontend
+      environment: dev
+      tier: frontend
+  spec:
      containers:
      - name: nginx
        image: nginx
