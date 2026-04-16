@@ -10,9 +10,9 @@ metadata:
     enironment: dev
     tier: frontend
 spec:
-  replicasetes: 3
-  selector:
-    matchlabels:
+  replicas: 3
+    selector:
+    matchLabels:
       project:  roboshop
       purpose: rs-demo
       component: frontend
