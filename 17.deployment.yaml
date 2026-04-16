@@ -1,0 +1,35 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+labels:
+    project:  roboshop
+    purpose:  rs-demo
+    component: frontend
+    enironment: dev
+    tier: frontend
+annotations:
+  kubernetes.io/change-cause: "moving to another version 1.29.7"
+spec:
+  replicas: 3
+  selector:
+  # usinhg matchLabels to select the pods for deployment(or)using the lables replicatset select the pod
+    matchLabels:
+      project:  roboshop
+      purpose: rs-demo
+      component: frontend
+      enironment: dev
+      tier: frontend
+  # using the template to create the pod(or)this is a pod defination,pod subset of replicaset 
+template:
+   metadata:
+     labels:
+       project:  roboshop
+       purpose: rs-demo
+       component: frontend
+       enironment: dev
+       tier: frontend
+   spec:
+     containers:
+     - name: nginx
+       image: nginx:latest
