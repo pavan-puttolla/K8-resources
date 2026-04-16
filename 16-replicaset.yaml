@@ -11,8 +11,8 @@ metadata:
     tier: frontend
 spec:
   replicas: 3
-    selector:
-    matchLabels:
+  selector:
+      matchLabels:
       project:  roboshop
       purpose: rs-demo
       component: frontend
