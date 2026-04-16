@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Replicaset
 metadata:
   name: nginx
 #this labels are using for replica set labels
