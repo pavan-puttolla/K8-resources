@@ -13,14 +13,12 @@ metadata:
 spec:
   replicas: 3
   selector:
-  # usinhg matchLabels to select the pods for deployment(or)using the lables replicatset select the pod
     matchLabels:
       project:  roboshop
       purpose: rs-demo
       component: frontend
       environment: dev
       tier: frontend
-  # using the template to create the pod(or)this is a pod defination,pod subset of replicaset 
   template:
    metadata:
      labels:
