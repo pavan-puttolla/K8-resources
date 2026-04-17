@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-labels:
-    project:  roboshop
-    purpose:  rs-demo
+  labels:
+    project: roboshop
+    purpose: rs-demo
     component: frontend
-    enironment: dev
+    environment: dev
     tier: frontend
-annotations:
-  kubernetes.io/change-cause: "moving to another version 1.29.7"
+  annotations:
+    kubernetes.io/change-cause: "moving to another version 1.29.7"
 spec:
   replicas: 3
   selector:
@@ -18,18 +18,18 @@ spec:
       project:  roboshop
       purpose: rs-demo
       component: frontend
-      enironment: dev
+      environment: dev
       tier: frontend
   # using the template to create the pod(or)this is a pod defination,pod subset of replicaset 
-template:
+  template:
    metadata:
      labels:
        project:  roboshop
        purpose: rs-demo
        component: frontend
-       enironment: dev
+       environment: dev
        tier: frontend
-   spec:
-     containers:
-     - name: nginx
-       image: nginx:latest
+     spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
